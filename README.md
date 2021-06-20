@@ -24,3 +24,5 @@ This contains various 'helper' or utility functions; checking whether a line or 
 This is where the magic happens.
 This function accepts the A lesson plan doc and B blank repo doc as parameters and builds B from A.
 It identifies sections of the document, then iterates through each section, evaluates content type, wraps it in the appropriate html & styling tags, then outputs everything in order to the blank repo google doc, where it can be copied + pasted into the LMS without any additional formatting needed.
+
+Event triggers are set such that every time a change is made to the lesson plan template, the script runs again and updates the html content in the blank repo doc.
